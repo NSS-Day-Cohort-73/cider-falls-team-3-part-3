@@ -1,7 +1,8 @@
 import {guestNumber} from './guestNumber.js'
 import { serviceLocation } from './serviceLocation.js'
 
-document.addEventListener('click',
+export function addListeners(){
+    document.addEventListener('click',
     function (event){
         const eventTarget = event.target.dataset
         if (eventTarget.type === 'destination'){
@@ -12,3 +13,4 @@ document.addEventListener('click',
         }
     }
 )
+}
