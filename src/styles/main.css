@@ -1,41 +1,102 @@
-<<<<<<< HEAD
-#destinations-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-.destination {
-    border: 1px solid #ccc;
-    padding: 10px;
-}
-
-=======
->>>>>>> main
-#guests-container {
-    text-align: right;
-    margin-top: 20px;
-}
-
-.park-header {
+/* Header: Park logo and name */
+header.park-header {
     text-align: center;
-}
-
-.park-footer {
-    text-align: center;
+    background-color: #2c3e50;
+    color: #ecf0f1;
     padding: 20px 0;
 }
-<<<<<<< HEAD
-=======
 
+header.park-header h1 {
+    margin: 10px 0;
+    font-size: 2.5em;
+}
+
+header.park-header img {
+    max-width: 150px;
+}
+
+/* Main Content Area */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Grid for Destinations */
 #destinations-container {
+    flex: 0 0 65%; /* Takes 65% of the space */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-gap: 20px;
 }
 
 .destination {
+    background-color: #fff;
     border: 1px solid #ccc;
-    padding: 10px;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
->>>>>>> main
+
+.destination h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.destination p {
+    font-size: 1em;
+    color: #7f8c8d;
+}
+
+/* Guest List */
+#guests-container {
+    flex: 0 0 30%; /* Takes 30% of the space */
+    text-align: right;
+}
+
+#guests-container p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+/* Footer: Park contact information */
+footer.park-footer {
+    text-align: center;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer.park-footer p {
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    #destinations-container {
+        grid-template-columns: 1fr;
+    }
+
+    #guests-container {
+        text-align: left;
+        margin-top: 20px;
+    }
+}
