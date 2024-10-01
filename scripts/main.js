@@ -1,7 +1,6 @@
-import { renderDestinations } from './destination.js'
-import { renderParkInfo } from './parkInfo.js'
-import { renderGuests } from './guests.js'
+import { addListeners } from "./listeners.js"
+import { renderDOM } from "./renderDOM.js"
 
-renderDestinations()
-renderParkInfo()
-renderGuests()
+const mainContainer = document.querySelector('#content')
+addListeners()
+mainContainer.innerHTML = renderDOM()
