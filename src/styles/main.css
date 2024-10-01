@@ -1,0 +1,24 @@
+#guests-container {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.park-header {
+    text-align: center;
+}
+
+.park-footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+#destinations-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.destination {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
