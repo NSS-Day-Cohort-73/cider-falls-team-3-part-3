@@ -12,7 +12,8 @@ export const renderHeader = () => {
             <h1 id="park-name">${park.name}</h1>
         </div>
     </header>
-    `;
+    `
+
 }
 
 //phone number, email address, and street address in footer
@@ -30,5 +31,5 @@ export const renderFooter = () => {
             <p>${park.name}. All rights reserved.</p>
         </div>
     </footer>
-    `;
+    `
 }
