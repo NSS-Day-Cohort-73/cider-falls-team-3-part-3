@@ -42,10 +42,11 @@ const database = {
     parkInfo: [
       {
         id: 1,
-        name: "Adventure Park",
-        logo: "adventure_park_logo.png",
-        email: "info@adventurepark.com",
-        address: "123 Park Lane, Adventure City, USA"
+        name: "Greg's Breakout Room Park",
+        logo: "./assets/parklogo.png",
+        email: "info@greg.com",
+        address: "us02web Zoom Street, Nashville, TN",
+        phoneNumber: "999-999-9999"
       }
     ],
     guests: [
