@@ -9,6 +9,7 @@ const destinations = getDestinations()
 export function renderDOM(){
     return `
                 ${renderHeader()}
+                <main>
                 ${renderServices()}
                 <div class='row'>
                     <div class='row'>
@@ -16,6 +17,7 @@ export function renderDOM(){
                     </div>
                     ${renderGuests()}
                 </div>
+                </main>
                 ${renderFooter()}
             `
     
