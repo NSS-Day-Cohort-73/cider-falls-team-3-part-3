@@ -1,6 +1,7 @@
 import { addListeners } from "./listeners.js"
 import { renderDOM } from "./renderDOM.js"
 
-const mainContainer = document.querySelector('#content')
 addListeners()
+
+const mainContainer = document.getElementById('content')
 mainContainer.innerHTML = renderDOM()

@@ -1,8 +1,28 @@
-import { getGuests } from './database.js';
-import { renderToDOM } from './renderDOM.js';
+import { getGuests, getDestinations } from './database.js'
 
+const renderHelper = (guests) => {
+    return guests.map(guest => `<li>${guest.firstName} ${guest.lastName}</li>`).join('')
+}
+
+const guests = getGuests()
+const destinations = getDestinations()
+
+// now to actually render the guest-list
 export function renderGuests() {
-    const guests = getGuests();
-    const guestHTML = guests.map(guest => `<p>${guest.firstName} ${guest.lastName}</p>`).join('');
-    renderToDOM(guestHTML, '#guests-container');
+    let html = '<div class="guest-container">'
+
+    for (const destination of destinations) {
+        const guestDestination = guests.filter(guest => guest.destinationId === destination.id)
+            if (guestDestination.length > 0)
+            {
+                html += `<div class="guest-container">
+                    <h3>Guests at ${destination.title}</h3>
+                    <ul>${renderHelper(guestDestination)}</ul>
+                </div>`
+            }
+        
+    }
+    
+    html += `</div>`
+    return html
 }
