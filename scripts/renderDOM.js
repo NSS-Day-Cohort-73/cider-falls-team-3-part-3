@@ -11,10 +11,12 @@ export function renderDOM(){
                 ${renderHeader()}
                 <main>
                 ${renderServices()}
-                <div class='row'>
-                    <div class='row'>
+                <div class='row destinations-and-services'>
+                    <div class='destination-container'>
+                    
                         ${destinationLoop()}
                     </div>
+                    
                     ${renderGuests()}
                 </div>
                 </main>
