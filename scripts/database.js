@@ -42,7 +42,7 @@ const database = {
     parkInfo: [
       {
         id: 1,
-        name: "Greg's Breakout Room Park",
+        name: "Cider Falls",
         logo: "./assets/parklogo.png",
         email: "info@greg.com",
         address: "us02web Zoom Street, Nashville, TN",

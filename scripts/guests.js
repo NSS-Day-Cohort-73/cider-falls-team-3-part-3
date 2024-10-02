@@ -15,7 +15,7 @@ export function renderGuests() {
         const guestDestination = guests.filter(guest => guest.destinationId === destination.id)
             if (guestDestination.length > 0)
             {
-                html += `<div class="guest-container">
+                html += `<div class="guest-item">
                     <h3>Guests at ${destination.title}</h3>
                     <ul>${renderHelper(guestDestination)}</ul>
                 </div>`

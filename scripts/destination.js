@@ -11,7 +11,7 @@ export const renderDestinations = (num) => {
     const servicesList = []
 
     let html =`
-            <div class='column'>
+            <div class='destination-item'>
                 <h2
                     data-type='destination'
                     data-id='${num}'
@@ -28,5 +28,3 @@ export const renderDestinations = (num) => {
     html += `<li class='destination'>${servicesList.join('</li><li class="destination">')}</li></ul></div>`
     return html
 }
-
-    
